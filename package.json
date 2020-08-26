@@ -1,0 +1,27 @@
+{
+  "name": "phrases-api",
+  "version": "1.0.0",
+  "description": "This is a simple app to put it in production and see how that works",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/D-Rosa99/phrases-api.git"
+  },
+  "keywords": [
+    "Express",
+    "Mongoose",
+    "Axios",
+    "React",
+    "ReactDom"
+  ],
+  "author": "David De La Rosa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/D-Rosa99/phrases-api/issues"
+  },
+  "homepage": "https://github.com/D-Rosa99/phrases-api#readme"
+}
