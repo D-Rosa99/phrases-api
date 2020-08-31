@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/D-Rosa99/phrases-api/issues"
   },
-  "homepage": "https://github.com/D-Rosa99/phrases-api#readme"
+  "homepage": "https://github.com/D-Rosa99/phrases-api#readme",
+  "dependencies": {
+    "joi": "^17.2.1"
+  }
 }
