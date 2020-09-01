@@ -1,11 +1,9 @@
 const express = require('express');
-
-const testRouter = require('./src/routers/index');
-require('./src/db-init');
-
+const morgan = require('morgan');
 const app = express();
-const PORT = process.env.PORT || 3000;
 
+require('./src/init/db-init');
+require('./src/init/server-init')(app);
+
+app.use(morgan('tiny'));
 app.use(express.json());
-app.use('/test', testRouter);
-app.listen(PORT, console.log(`Server started on port ${PORT}`));

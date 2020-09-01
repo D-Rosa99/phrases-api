@@ -16,7 +16,8 @@
     "Mongoose",
     "Axios",
     "React",
-    "ReactDom"
+    "ReactDom",
+    "Morgan"
   ],
   "author": "David De La Rosa",
   "license": "ISC",
@@ -25,6 +26,12 @@
   },
   "homepage": "https://github.com/D-Rosa99/phrases-api#readme",
   "dependencies": {
-    "joi": "^17.2.1"
+    "express": "4.17.1",
+    "joi": "17.2.1",
+    "mongoose": "5.10.2",
+    "morgan": "1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "2.0.4"
   }
 }
