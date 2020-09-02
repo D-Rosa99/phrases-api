@@ -1,21 +1,18 @@
 const express = require('express');
 const router = express.Router();
-const Quotes = require('../models/quotes');
+const {
+  getAllData,
+  postData,
+  deleteData,
+  updateData,
+} = require('../controller');
 
-router.get('/', async (req, res) => {
-  const getQuote = await Quotes.find().select('-_id -__v');
-  res.status(200).json(getQuote);
-});
+router.get('/', getAllData);
 
-router.post('/', async (req, res) => {
-  const input = req.body;
-  try {
-    const newQuote = new Quotes(input);
-    await newQuote.save();
-    return res.send('successful');
-  } catch (e) {
-    console.log('something went wrong ', e);
-  }
-});
+router.post('/', postData);
+
+router.delete('/:key/:fieldToSearch', deleteData);
+
+router.put('/:key/:fieldToSearch/:fieldToUpdate', updateData);
 
 module.exports = router;

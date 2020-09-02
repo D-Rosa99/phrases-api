@@ -1,9 +1,10 @@
 const express = require('express');
 const morgan = require('morgan');
-const app = express();
 
+const serverInit = require('./src/init/server-init');
 require('./src/init/db-init');
-require('./src/init/server-init')(app);
 
+const app = express();
 app.use(morgan('tiny'));
 app.use(express.json());
+serverInit(app);
