@@ -26,12 +26,32 @@
   },
   "homepage": "https://github.com/D-Rosa99/phrases-api#readme",
   "dependencies": {
+    "axios": "^0.20.0",
     "express": "4.17.1",
     "joi": "17.2.1",
     "mongoose": "5.10.2",
-    "morgan": "1.10.0"
+    "morgan": "1.10.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   },
   "devDependencies": {
-    "nodemon": "2.0.4"
+    "@babel/core": "^7.11.5",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-react": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "eslint": "^7.8.1",
+    "eslint-config-node": "^4.1.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "html-webpack-plugin": "^4.4.1",
+    "husky": "^4.2.5",
+    "nodemon": "2.0.4",
+    "prettier": "^2.1.1",
+    "pretty-quick": "^3.0.0",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
   }
 }
