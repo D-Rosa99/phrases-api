@@ -1,11 +1,7 @@
-const express = require('express');
+import express from 'express';
+import { getAllData, postData, deleteData, updateData } from '../controller';
+
 const router = express.Router();
-const {
-  getAllData,
-  postData,
-  deleteData,
-  updateData,
-} = require('../controller');
 
 router.get('/', getAllData);
 
@@ -15,4 +11,4 @@ router.delete('/:key/:fieldToSearch', deleteData);
 
 router.put('/:key/:fieldToSearch/:fieldToUpdate', updateData);
 
-module.exports = router;
+export default router;
