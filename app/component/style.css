@@ -1,0 +1,7 @@
+.app-list {
+    display: flex;
+}
+.app-list-item {
+    border: 1px solid steelblue;
+    width: 50vw;
+}
